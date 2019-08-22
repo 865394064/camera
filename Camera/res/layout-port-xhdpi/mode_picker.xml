@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.camera.ui.ModePickerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ModePickerLayout" >
+    <ImageView
+        android:id="@+id/mode_picker_background"
+        style="@style/ModePickerBackground"/>
+    <com.android.camera.ui.ModePickerRotateLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:visibility="gone">
+        <com.android.camera.ui.ModePickerScrollView
+            android:id="@+id/mode_picker_scroller"
+            style="@style/ModePickerScroll" >
+            <LinearLayout android:id="@+id/mode_picker"    
+                style="@style/ModePickerGroup" 
+                android:splitMotionEvents="false">
+                <!--begin:added by wangyouyou-->
+                <!--<com.android.camera.ui.RotateImageView
+                    android:contentDescription="@string/accessibility_switch_to_panorama"
+                    style="@style/ModePickerIcon" />-->
+                <!--<com.android.camera.ui.RotateImageView
+                	android:id="@+id/a"
+                	android:visibility="gone"
+                    android:contentDescription="@string/accessibility_switch_to_panorama"
+                    style="@style/ModePickerIcon" />
+                <com.android.camera.ui.RotateImageView
+                	android:id="@+id/b"
+                	android:visibility="gone"
+                    android:contentDescription="@string/accessibility_switch_to_panorama"
+                    style="@style/ModePickerIcon" />
+                <com.android.camera.ui.RotateImageView
+                	android:id="@+id/c"
+                	android:visibility="gone"
+                    android:contentDescription="@string/accessibility_switch_to_panorama"
+                    style="@style/ModePickerIcon" />-->
+                <!--end:added by wangyouyou-->
+                <!--<com.android.camera.ui.RotateImageView
+                    android:id="@+id/mode_photo"
+                    android:contentDescription="@string/accessibility_switch_to_camera"
+                    style="@style/ModePickerIcon" />-->
+                <!--<com.android.camera.ui.RotateImageView
+                    android:id="@+id/mode_panorama"
+                    android:contentDescription="@string/accessibility_switch_to_panorama"
+                    style="@style/ModePickerIcon" />-->
+                <com.android.camera.ui.RotateImageView
+                    android:id="@+id/mode_panorama"
+                    android:contentDescription="@string/accessibility_switch_to_panorama"
+                    style="@style/ModePickerIcon" />
+                <com.android.camera.ui.RotateImageView
+                    android:id="@+id/mode_stereo_camera"
+                    android:contentDescription="@string/accessibility_switch_to_dual_camera"
+                    style="@style/ModePickerIcon" />
+                <com.android.camera.ui.RotateImageView
+                    android:id="@+id/mode_photo_pip"
+                    android:contentDescription="@string/accessibility_switch_to_pip"
+                    style="@style/ModePickerIcon" />
+                <!--<com.android.camera.ui.RotateImageView
+                    android:id="@+id/mode_live_photo"
+                    android:contentDescription="@string/accessibility_switch_to_live_photo"
+                    style="@style/ModePickerIcon" />-->
+                <com.android.camera.ui.RotateImageView
+                    android:id="@+id/mode_face_beauty"
+                    android:contentDescription="@string/accessibility_switch_to_face_beauty"
+                    style="@style/ModePickerIcon" />
+                <!--<com.android.camera.ui.RotateImageView
+                    android:id="@+id/mode_motion_track"
+                    android:contentDescription="@string/accessibility_switch_to_motion_track"
+                    style="@style/ModePickerIcon" />-->
+                 <!--add by scq-->
+                <com.android.camera.ui.RotateImageView
+                    android:id="@+id/mode_photo_humanface"
+                    android:contentDescription="@string/accessibility_switch_to_camera"
+                    style="@style/ModePickerIcon" />
+                <!--add by scq-->
+                <com.android.camera.ui.RotateImageView
+                    android:id="@+id/mode_photo"
+                    android:contentDescription="@string/accessibility_switch_to_camera"
+                    style="@style/ModePickerIcon" />
+                <!--<com.android.camera.ui.RotateImageView
+                    android:id="@+id/mode_face_beauty"
+                    android:contentDescription="@string/accessibility_switch_to_face_beauty"
+                    style="@style/ModePickerIcon" />-->
+                <com.android.camera.ui.RotateImageView
+                    android:id="@+id/mode_live_photo"
+                    android:contentDescription="@string/accessibility_switch_to_live_photo"
+                    style="@style/ModePickerIcon" /><!--added by wangyouyou-->
+                <!--<com.android.camera.ui.RotateImageView
+                    android:id="@+id/mode_panorama"
+                    android:contentDescription="@string/accessibility_switch_to_panorama"
+                    style="@style/ModePickerIcon" />-->
+               <com.android.camera.ui.RotateImageView
+                    android:id="@+id/mode_motion_track"
+                    android:contentDescription="@string/accessibility_switch_to_motion_track"
+                    style="@style/ModePickerIcon" /><!--added by wangyouyou-->
+                <com.android.camera.ui.RotateImageView
+                    android:id="@+id/mode_mav"
+                    android:contentDescription="@string/accessibility_switch_to_mav"
+                    style="@style/ModePickerIcon"
+                    android:layout_marginBottom="0dp" />
+                    <!--begin:added by wangyouyou-->
+                <com.android.camera.ui.RotateImageView
+                    android:id="@+id/mode_panorama_add"
+                    android:contentDescription="@string/accessibility_switch_to_panorama"
+                    style="@style/ModePickerIcon" />
+                <com.android.camera.ui.RotateImageView
+                    android:id="@+id/mode_panorama_add"
+                    android:contentDescription="@string/accessibility_switch_to_panorama"
+                    style="@style/ModePickerIcon" />
+               <com.android.camera.ui.RotateImageView
+                    android:id="@+id/mode_panorama_add"
+                    android:contentDescription="@string/accessibility_switch_to_panorama"
+                    style="@style/ModePickerIcon" />   
+               <com.android.camera.ui.RotateImageView
+                    android:id="@+id/mode_panorama_add"
+                    android:contentDescription="@string/accessibility_switch_to_panorama"
+                    style="@style/ModePickerIcon" />
+                    <!--end:added by wangyouyou-->
+            </LinearLayout>
+        </com.android.camera.ui.ModePickerScrollView>
+    </com.android.camera.ui.ModePickerRotateLayout>
+    <!--begin:added by wangyouyou-->
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dip"
+        android:visibility="gone"><!--mod by gaojunbin-->
+	    <ImageView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:background="@drawable/iphone_mode_picker_dot_mark"/>
+    </RelativeLayout>
+    <LinearLayout 
+	        android:id="@+id/mode_layer"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:layout_marginTop="20dip"
+	        android:background="@null">
+	        <!--Modify by scq : 
+			android:layout_width="0dip"-->
+	        
+	        <TextView 
+	            android:id="@+id/one"
+	            android:layout_width="0dip"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:text="@string/mode_motion_track_title_sss"
+	            android:gravity="left"
+	            android:paddingLeft="5dip"
+	            android:textSize="11dip"
+	            android:clickable="true"
+	            android:textColor="@android:color/white"/>
+	        
+	        <TextView 
+	            android:id="@+id/two"
+	            android:layout_width="0dip"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:text="@string/mode_live_photo_title_sss"
+	            android:gravity="center"
+	            android:textSize="11dip"
+	            android:clickable="true"
+	            android:textColor="@android:color/white"/>
+	        
+	        <TextView 
+	            android:id="@+id/three"
+	            android:layout_width="0dip"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:text="@string/mode_photo_title_sss"
+	            android:gravity="center"
+	            android:textSize="11dip"
+	            android:clickable="true"
+	            android:textColor="#FFCC00"/>
+	        
+	        <TextView 
+	            android:id="@+id/four"
+	            android:layout_width="0dip"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:text="@string/mode_photo_humanface_title_sss"
+	            android:gravity="center"
+	            android:textSize="11dip"
+	            android:clickable="true"
+	            android:textColor="@android:color/white"/>
+	        
+	        <TextView 
+	            android:id="@+id/five"
+	            android:layout_width="0dip"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:text="@string/mode_face_beauty_title_sss"
+	            android:gravity="right"
+	            android:paddingRight="5dip"
+	            android:textSize="11dip"
+	            android:clickable="true"
+	            android:textColor="@android:color/white"/>
+	        
+	    </LinearLayout>
+    <!--end:added by wangyouyou-->
+</com.android.camera.ui.ModePickerFrameLayout>

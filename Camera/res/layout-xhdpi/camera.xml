@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This layout is shared by phone and tablet in landscape orientation. -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/camera_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:splitMotionEvents="false">
+    <FrameLayout android:id="@+id/camera_surfaceview_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"  
+        android:layout_gravity="center"
+	android:layout_marginBottom="35dip"><!--added android:layout_marginBottom="35dip" by wangyouyou-->
+        <!-- <include layout="@layout/camera_preview_layout"/> -->
+    </FrameLayout>
+    <FrameLayout android:id="@+id/camera_app_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:splitMotionEvents="false">
+        <include layout="@layout/preview_frame"/>
+        <include layout="@layout/view_layers"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/camera_glview_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:splitMotionEvents="false">
+         <include layout="@layout/gl_root_group"/>
+	<!--begin: added by scq-->
+       <TextView 
+                    android:id="@+id/recording_time_show"
+                    android:layout_width="wrap_content"
+        	      android:layout_height="wrap_content"
+        	      android:paddingStart="4dp"
+        	      android:paddingEnd="8dp"
+        	      android:drawablePadding="4dp"
+            	      android:layout_gravity="center_horizontal"
+            	      android:layout_marginTop="10dp"
+        	      android:gravity="center"
+        	      android:textColor="@color/setting_item_text_color_normal"
+        	      android:textAppearance="?android:attr/textAppearanceMedium"
+        	      android:singleLine="true"
+        	      android:visibility="gone"/>
+       <!--end: added by scq-->
+         <View android:id="@+id/camera_cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/black"/>
+    </FrameLayout>
+    <!-- Begin: added by wangyouyou -->
+	<RelativeLayout android:id="@+id/camera_app_root_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+		android:visibility="visible"
+        android:splitMotionEvents="false">
+	</RelativeLayout>
+	<FrameLayout
+	android:id="@+id/shade_top"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:background="#000000">
+    </FrameLayout>
+	<FrameLayout
+	android:id="@+id/shade_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="600dip"
+        android:layout_marginTop="520dip"
+        android:background="#000000">
+    </FrameLayout><!--added by wangyouyou-->
+	<!-- End: added by wangyouyou -->
+	<!--Begin: added by scq-->
+	<View 
+	 android:id="@+id/flash_background_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E2E2E2"/>
+	<View 
+	 android:id="@+id/flash_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"/>
+	<!--End: added by scq -->
+</FrameLayout>

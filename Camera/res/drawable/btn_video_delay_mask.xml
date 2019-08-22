@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--add by scq 20161019-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+  <item
+        android:state_enabled="true"
+        android:state_pressed="true"
+        android:drawable="@drawable/btn_shutter_video_delay_disable_stop_iphone_press" /><!--modified by wangyouyou and scq -->
+  <item
+        android:state_enabled="true"
+        android:state_focused="true"
+        android:drawable="@drawable/btn_shutter_video_delay_disable_stop_iphone_press" /><!--modified by wangyouyou and scq -->
+  <item
+        android:state_enabled="true"
+        android:drawable="@drawable/btn_shutter_video_delay_disable_stop_iphone" /> <!--modified by wangyouyou and scq -->
+  <item
+        android:state_enabled="false"        
+        android:state_focused="true"
+        android:drawable="@drawable/btn_shutter_video_delay_disable_stop_iphone" /><!--modified by wangyouyou and scq -->
+  <item
+        android:state_enabled="false"
+        android:drawable="@drawable/btn_shutter_video_delay_disable_stop_iphone"/><!--modified by wangyouyou and scq -->
+</selector>

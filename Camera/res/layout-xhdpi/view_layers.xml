@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_layer_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:splitMotionEvents="false">
+    <FrameLayout
+        android:id="@+id/top_layer"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:background="@android:color/transparent">
+    </FrameLayout><!--added by wangyouyou-->
+
+    <ImageView  
+    	 android:id="@+id/zoom_rate_arc_bg_view"  
+        android:layout_width="match_parent"
+        android:layout_height="140dip"
+        android:layout_marginTop="380dip"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        android:background="@drawable/zoom_rate_arc_bg" /><!--added by wangyouyou for zoom rate-->
+
+   <com.android.camera.ui.ZoomArcView  
+        android:id="@+id/zoom_rate_arc_view"  
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="380dip"   
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        /><!--android:src="@drawable/zoom_rate_arc" -->
+
+   <Button
+   	  android:id="@+id/zoom_rate_arc_button_0"    
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:layout_marginTop="405dip"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:textSize="9dip"
+        android:visibility="gone"
+        android:background="@drawable/zoom_rate_bg" /><!--added by wangyouyou for zoom rate-->
+
+    <Button
+   	  android:id="@+id/zoom_rate_arc_button_90"    
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:layout_marginTop="405dip"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:textSize="9dip"
+        android:rotation="90"
+        android:visibility="gone"
+        android:background="@drawable/zoom_rate_bg" /><!--added by wangyouyou for zoom rate-->
+
+    <Button
+   	  android:id="@+id/zoom_rate_arc_button_180"    
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:layout_marginTop="405dip"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:textSize="9dip"
+        android:rotation="180"
+        android:visibility="gone"
+        android:background="@drawable/zoom_rate_bg" /><!--added by wangyouyou for zoom rate-->
+
+    <Button
+   	  android:id="@+id/zoom_rate_arc_button_270"    
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:layout_marginTop="405dip"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:textSize="9dip"
+        android:rotation="270"
+        android:visibility="gone"
+        android:background="@drawable/zoom_rate_bg" /><!--added by wangyouyou for zoom rate-->
+        
+
+   <Button
+   	  android:id="@+id/zoom_rate_button_0"    
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:layout_marginTop="470dip"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:textSize="9dip"
+        android:background="@drawable/zoom_rate_bg" /><!--added by wangyouyou for zoom rate-->
+
+    <Button
+   	  android:id="@+id/zoom_rate_button_90"    
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:layout_marginTop="470dip"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:textSize="9dip"
+        android:rotation="90"
+        android:visibility="gone"
+        android:background="@drawable/zoom_rate_bg" /><!--added by wangyouyou for zoom rate-->
+
+    <Button
+   	  android:id="@+id/zoom_rate_button_180"    
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:layout_marginTop="470dip"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:textSize="9dip"
+        android:rotation="180"
+        android:visibility="gone"
+        android:background="@drawable/zoom_rate_bg" /><!--added by wangyouyou for zoom rate-->
+
+    <Button
+   	  android:id="@+id/zoom_rate_button_270"    
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:layout_marginTop="470dip"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:textSize="9dip"
+        android:rotation="270"
+        android:visibility="gone"
+        android:background="@drawable/zoom_rate_bg" /><!--added by wangyouyou for zoom rate-->
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dip"><!--modified by wangyouyou from 490dip-->
+	    <ImageView 
+	        android:id="@+id/camera_flash_icon"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:visibility="gone"
+	        android:background="@drawable/camera_flash_icon"/>
+	    <ImageView 
+	    	 android:id="@+id/camera_hdr_icon"    
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:visibility="gone"
+	        android:background="@drawable/camera_hdr_icon"/>
+    </RelativeLayout>
+    <FrameLayout
+        android:id="@+id/bottom_layer"
+        android:layout_width="match_parent"
+        android:layout_height="150dip"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="520dip">
+    </FrameLayout> <!--added by wangyouyou-->
+    <!-- review views here -->
+    <FrameLayout android:id="@+id/view_layer_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:splitMotionEvents="false">
+    </FrameLayout>
+    <!-- normal views here -->
+    <RelativeLayout android:id="@+id/view_layer_normal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:splitMotionEvents="false"
+        >
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/view_layer_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:splitMotionEvents="false">
+    </FrameLayout>
+    <FrameLayout android:id="@+id/view_layer_shutter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:splitMotionEvents="false"
+        >
+    </FrameLayout>
+    <FrameLayout android:id="@+id/view_layer_setting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:splitMotionEvents="false"
+        >
+    </FrameLayout>
+    <!-- overlay views here -->
+    <FrameLayout android:id="@+id/view_layer_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:splitMotionEvents="false">
+    </FrameLayout>
+    <TextView 
+            android:id="@+id/picker_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/review_cancel"
+            android:layout_marginLeft="50dip"
+            android:textSize="20dip"
+            android:visibility="invisible"
+            android:clickable="true"
+            android:layout_marginTop="580dip"
+            android:textColor="#ffffff"/>
+
+	<RelativeLayout 
+	android:id="@+id/iphone_flash_mode_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:visibility="gone"
+        android:background="#000000">
+
+       <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+        
+        <ImageView 
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_flash_off_holo_light_iphone_wyy"/>
+        
+        <TextView 
+            android:id="@+id/iphone_flash_auto"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/iphone_flash_auto_text"
+            android:textColor="#ffffff"
+            android:clickable="true"/>
+        
+        <TextView 
+            android:id="@+id/iphone_flash_on"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/iphone_flash_on_text"
+            android:textColor="#ffffff"
+            android:clickable="true"/>
+        
+        <TextView 
+            android:id="@+id/iphone_flash_off"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/iphone_flash_off_text"
+            android:clickable="true"
+            android:textColor="#ffffff"/>
+        
+    </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout 
+	android:id="@+id/iphone_hdr_mode_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:visibility="gone"
+        android:background="#000000">
+
+       <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+        
+        <TextView 
+            android:id="@+id/iphone_hdr"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dip"
+            android:text="@string/iphone_hdr_text"
+            android:textColor="#ffffff"/>
+        
+        <TextView 
+            android:id="@+id/iphone_hdr_on"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dip"
+            android:text="@string/iphone_flash_on_text"
+            android:textColor="#ffffff"
+            android:clickable="true"/>
+        
+        <TextView 
+            android:id="@+id/iphone_hdr_off"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dip"
+            android:text="@string/iphone_flash_off_text"
+            android:clickable="true"
+            android:textColor="#ffffff"/>
+        
+    </LinearLayout>
+    </RelativeLayout>
+    <!-- loading animation
+    <FrameLayout android:id="@+id/camera_app_loading_animation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        android:clickable="true">
+        <com.android.camera.ui.SelfRotateImageView
+            android:id="@+id/loading_frame"
+            android:src="@drawable/ic_loading_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </FrameLayout> -->
+</FrameLayout>

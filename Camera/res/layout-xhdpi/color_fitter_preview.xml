@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    android:gravity="center" 
+    android:layout_gravity="center" 
+    android:orientation="vertical" 
+    android:background="#ff1a1a1a" 
+    android:layout_width="wrap_content" 
+    android:layout_height="700dp" 
+    android:layout_marginTop="40dp" 
+    android:layout_marginBottom="100dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"><!--modified by wangyouyou 2015/6/4-->
+    <LinearLayout 
+        android:gravity="center" 
+        android:orientation="horizontal" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_margin="5.0dip" 
+        android:layout_weight="1.0">
+        <FrameLayout 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:layout_weight="1.0" 
+            android:layout_marginStart="5.0dip">
+            <com.android.camera.ui.mySurfaceView 
+                android:id="@+id/surfaceView1" 
+                android:layout_width="fill_parent" 
+                android:layout_height="fill_parent" />
+            <TextView 
+                android:textStyle="bold" 
+                android:textColor="@*android:color/darker_gray" 
+                android:layout_gravity="bottom|right|center" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:text="@string/pref_camera_coloreffect_entry_mono" />
+        </FrameLayout>
+        <FrameLayout 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:layout_weight="1.0" 
+            android:layout_marginStart="5.0dip">
+            <com.android.camera.ui.mySurfaceView 
+                android:id="@+id/surfaceView7" 
+                android:layout_width="fill_parent" 
+                android:layout_height="fill_parent" />
+            <TextView 
+                android:textStyle="bold" 
+                android:textColor="@*android:color/darker_gray" 
+                android:layout_gravity="bottom|right|center" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:text="@string/pref_camera_coloreffect_entry_solarize" />
+        </FrameLayout>
+        <FrameLayout 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:layout_weight="1.0" 
+            android:layout_marginStart="5.0dip">
+            <com.android.camera.ui.mySurfaceView 
+                android:id="@+id/surfaceView3" 
+                android:layout_width="fill_parent" 
+                android:layout_height="fill_parent" />
+            <TextView 
+                android:textStyle="bold" 
+                android:textColor="@*android:color/darker_gray" 
+                android:layout_gravity="bottom|right|center" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:text="@string/pref_camera_coloreffect_entry_negative" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout 
+        android:gravity="center" 
+        android:orientation="horizontal" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_margin="5.0dip" 
+        android:layout_weight="1.0">
+        <FrameLayout 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:layout_weight="1.0" 
+            android:layout_marginStart="5.0dip">
+            <com.android.camera.ui.mySurfaceView 
+                android:id="@+id/surfaceView6" 
+                android:layout_width="fill_parent" 
+                android:layout_height="fill_parent" />
+            <TextView 
+                android:textStyle="bold" 
+                android:textColor="@*android:color/darker_gray" 
+                android:layout_gravity="bottom|right|center" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:text="@string/pref_camera_coloreffect_entry_whiteboard" />
+        </FrameLayout>
+        <FrameLayout 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:layout_weight="1.0" 
+            android:layout_marginStart="5.0dip">
+            <com.android.camera.ui.mySurfaceView 
+                android:id="@+id/surfaceView" 
+                android:layout_width="fill_parent" 
+                android:layout_height="fill_parent" />
+            <TextView 
+                android:textStyle="bold" 
+                android:textColor="@*android:color/darker_gray" 
+                android:layout_gravity="bottom|right|center" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:text="@string/pref_camera_coloreffect_entry_none" />
+        </FrameLayout>
+        <FrameLayout 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:layout_weight="1.0" 
+            android:layout_marginStart="5.0dip">
+            <com.android.camera.ui.mySurfaceView 
+                android:id="@+id/surfaceView5" 
+                android:layout_width="fill_parent" 
+                android:layout_height="fill_parent" />
+            <TextView 
+                android:textStyle="bold" 
+                android:textColor="@*android:color/darker_gray" 
+                android:layout_gravity="bottom|right|center" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:text="@string/pref_camera_coloreffect_entry_blackboard" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout 
+        android:gravity="center" 
+        android:orientation="horizontal" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_margin="5.0dip" 
+        android:layout_weight="1.0">
+        <FrameLayout 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:layout_weight="1.0" 
+            android:layout_marginStart="5.0dip">
+            <com.android.camera.ui.mySurfaceView 
+                android:id="@+id/surfaceView4" 
+                android:layout_width="fill_parent" 
+                android:layout_height="fill_parent" />
+            <TextView 
+                android:textStyle="bold" 
+                android:textColor="@*android:color/darker_gray" 
+                android:layout_gravity="bottom|right|center" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:text="@string/pref_camera_coloreffect_entry_aqua" />
+        </FrameLayout>
+        <FrameLayout 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:layout_weight="1.0" 
+            android:layout_marginStart="5.0dip">
+            <com.android.camera.ui.mySurfaceView 
+                android:id="@+id/surfaceView2" 
+                android:layout_width="fill_parent" 
+                android:layout_height="fill_parent" />
+            <TextView 
+                android:textStyle="bold" 
+                android:textColor="@*android:color/darker_gray" 
+                android:layout_gravity="bottom|right|center" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:text="@string/pref_camera_coloreffect_entry_sepia" />
+        </FrameLayout>
+        <FrameLayout 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:layout_weight="1.0" 
+            android:layout_marginStart="5.0dip">
+            <com.android.camera.ui.mySurfaceView 
+                android:id="@+id/surfaceView8" 
+                android:layout_width="fill_parent" 
+                android:layout_height="fill_parent" />
+            <TextView 
+                android:textStyle="bold" 
+                android:textColor="@*android:color/darker_gray" 
+                android:layout_gravity="bottom|right|center" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:text="@string/pref_camera_coloreffect_entry_redtint" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>
+
